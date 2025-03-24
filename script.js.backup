@@ -41,9 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Accordion for Q&A section is now handled by accordion.js
-    // This section is kept for documentation but commented out to avoid conflicts
-    /*
+    // Accordion for Q&A section
     const accordionItems = document.querySelectorAll('.qa-item');
     
     if (accordionItems.length > 0) {
@@ -78,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    */
     
     // Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

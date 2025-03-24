@@ -390,17 +390,24 @@ nav ul li a.cta-button {
 .qa-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
     padding: 0 15px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .qa-item.active .qa-answer {
     max-height: 500px;
     padding-bottom: 15px;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
 }
 
-.qa-item.active .accordion-icon .fa-plus {
-    transform: rotate(45deg);
+/* Remove rotation transform since we're swapping icons instead */
+.qa-item.active .accordion-icon i {
+    color: var(--gold-light); /* Brighten the icon when active */
 }
 
 .qa-answer p {
@@ -444,16 +451,18 @@ nav ul li a.cta-button {
 }
 
 .property-card {
-    background-color: var(--white);
+    background-color: var(--medium-gray);
     border-radius: 2px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    border: 1px solid var(--light-gray);
 }
 
 .property-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--gold-dark);
 }
 
 .property-image {
@@ -492,10 +501,11 @@ nav ul li a.cta-button {
 .property-details h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
+    color: var(--gold);
 }
 
 .location {
-    color: #777;
+    color: #aaa;
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
@@ -505,11 +515,12 @@ nav ul li a.cta-button {
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 0.9rem;
+    color: var(--white);
 }
 
 .property-link {
     display: inline-block;
-    color: var(--gold-dark);
+    color: var(--gold);
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
