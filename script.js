@@ -9,11 +9,58 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.scrollY > 50) {
             header.style.padding = '15px 5%';
             header.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+            header.classList.add('scrolled');
         } else {
             header.style.padding = '20px 5%';
             header.style.backgroundColor = 'rgba(18, 18, 18, 0.9)';
+            header.classList.remove('scrolled');
         }
     });
+    
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('.nav-menu li a');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            
+            // Toggle hamburger animation
+            this.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+    
+    // Accordion for Q&A section
+    const accordionItems = document.querySelectorAll('.qa-item');
+    
+    if (accordionItems.length > 0) {
+        accordionItems.forEach(item => {
+            const question = item.querySelector('.qa-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    }
     
     // Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -120,4 +167,28 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
         });
     });
-});
+    
+    // Solution Card Animation
+    const solutionCards = document.querySelectorAll('.solution-card');
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+    
+    const observer = new IntersectionObserver(animateOnScroll, {
+        root: null,
+        threshold: 0.15,
+    });
+    
+    solutionCards.forEach(card => {
+        observer.observe(card);
+    });
+    
+    // Services Animation
+    const serviceItems = document.querySelectorAll('.service-item');
+    serviceItems.forEach(item => {
+        observer

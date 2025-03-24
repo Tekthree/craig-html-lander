@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denver Home Buyer Services | Craig Debolt Realty</title>
+    <meta
+      name="description"
+      content="Find your Denver dream home with Craig Debolt. Personalized property searches, neighborhood matchmaking, and expert negotiation with a local real estate agent."
+    />
+    <meta
+      name="keywords"
+      content="Denver real estate, home buying Denver, Craig Debolt realtor, property search, first-time homebuyer, Denver neighborhoods"
+    />
+    <meta name="author" content="Craig Debolt" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://craigdeboltrealty.com/buyer-services" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://craigdeboltrealty.com/buyer-services" />
+    <meta
+      property="og:title"
+      content="Denver Home Buyer Services | Craig Debolt Realty"
+    />
+    <meta
+      property="og:description"
+      content="Find your Denver dream home with Craig Debolt's neighborhood expertise and personalized property searches."
+    />
+    <meta
+      property="og:image"
+      content="https://craigdeboltrealty.com/og-image.jpg"
+    />
+
+    <!-- Custom Fonts -->
+    <style>
+      @font-face {
+        font-family: 'ABC Normal';
+        src: url('fonts/abcnormal-normal.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      
+      @font-face {
+        font-family: 'Juana Light';
+        src: url('fonts/juana-light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      
+      h1, h2, .logo h1, .footer-logo h3 {
+        font-family: 'Juana Light', serif !important;
+        letter-spacing: 0.5px;
+        font-weight: 300 !important;
+      }
+      
+      h3, h4, h5, h6, .logo p {
+        font-family: 'ABC Normal', sans-serif !important;
+        letter-spacing: 0.5px;
+      }
+      
+      .hero-content h2 {
+        font-family: 'Juana Light', serif !important;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 300 !important;
+      }
+      
+      .qa-question h4 {
+        font-family: 'ABC Normal', sans-serif !important;
+      }
+      
+      /* Additional overrides to prevent bold text for Juana Light */
+      .section-title h2, .container h2, .footer-logo h3 {
+        font-family: 'Juana Light', serif !important;
+        font-weight: 300 !important;
+      }
+      
+      /* Service specific styles */
+      .service-intro {
+        padding: 80px 0;
+        background-color: #0A0A0A;
+      }
+      
+      .two-columns {
+        display: flex;
+        gap: 40px;
+      }
+      
+      .column {
+        flex: 1;
+      }
+      
+      .full-width-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .service-benefits {
+        background-color: #1a1a1a;
+        padding: 80px 0;
+      }
+      
+      .benefit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 50px;
+      }
+      
+      .benefit-card {
+        background-color: #121212;
+        padding: 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .benefit-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        color: #D4AF37;
+      }
+      
+      .process-section {
+        padding: 80px 0;
+        background-color: #0A0A0A;
+      }
+      
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+      }
+      
+      .process-step {
+        text-align: center;
+      }
+      
+      .process-step .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #D4AF37;
+        color: #121212;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+      }
+      
+      .process-step h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+      
+      .cta-box {
+        background-color: #1a1a1a;
+        padding: 60px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 80px;
+      }
+      
+      .cta-box h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .two-columns {
+          flex-direction: column;
+        }
+        
+        .benefit-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .process-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .process-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .cta-box {
+          padding: 30px;
+        }
+      }
+    </style>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 style="font-weight: 300 !important;">CRAIG DEBOLT</h1>
+        <p>LUX DENVER REALTOR</p>
+      </div>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#properties">Properties</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="cta-button">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero banner">
+        <div class="hero-video">
+          <video autoplay loop muted playsinline>
+            <source src="images/FINAL-Website-Video.mp4" type="video/mp4" />
+            <!-- Fallback text if video doesn't load -->
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+          <h2 style="font-weight: 300 !important;">Find Your Denver Dream Home With a True Local Guide</h2>
+          <p>
+            Stop Endless Searching. Start Finding Your Perfect Match.
+          </p>
+          <a href="#contact" class="cta-button">Schedule Your Free Consultation</a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-image">
+            <div class="image-container">
+              <img
+                src="images/craig-debolt-lux-real-estate-agency.jpg"
+                alt="Craig Debolt, Denver's Premier Luxury Real Estate Agent"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+          <div class="about-content">
+            <h2 style="font-weight: 300 !important;">Buyer Services</h2>
+            <p class="subtitle">Expert Guidance for Denver Home Buyers</p>
+            <p>
+              After a decade of living in Denver's diverse neighborhoods, I know where you'll thrive based on your lifestyle, not just your budget. As your dedicated buyer's agent, I'll navigate Denver's competitive market with insider knowledge that online listings simply can't provide.
+            </p>
+            <a href="#contact" class="cta-button">Schedule Your Free Buyer Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-benefits">
+        <div class="container">
+          <h2 style="font-weight: 300 !important;">Why Denver Buyers Choose Craig</h2>
+          <div class="benefit-grid">
+            <div class="benefit-card">
+              <h3>Neighborhood Matchmaking</h3>
+              <p>Discover hidden gems in communities that match your lifestyle priorities. I'll help you find the perfect balance of location, amenities, and value based on what matters most to you.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Off-Market Opportunities</h3>
+              <p>Gain access to properties before they hit the public market. My network of local connections provides you with a competitive advantage in Denver's fast-moving real estate landscape.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Strategic Negotiation</h3>
+              <p>My clients averaged 4.2% below asking price in 2024. I'll leverage market insights and timing strategies to secure your dream home at the best possible price.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Stress-Free Process</h3>
+              <p>"Craig anticipated issues before they happened and solved them immediately. Our purchase couldn't have been smoother." - The Garcia Family</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="container">
+          <h2 style="font-weight: 300 !important;">Your Home Buying Journey</h2>
+          <div class="process-grid">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Personalized Consultation</h3>
+              <p>We'll discuss your must-haves, nice-to-haves, and deal-breakers to create your custom home search plan.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>Strategic Home Search</h3>
+              <p>Save time with properties that actually match your criteria and neighborhood preferences.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Expert Negotiation</h3>
+              <p>Secure your dream home at the best possible price with strategic offer positioning.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Seamless Closing</h3>
+              <p>I'll handle the details while you prepare for your exciting move into your new Denver home.</p>
+            </div>
+          </div>
+          <div class="cta-box">
+            <h2 style="font-weight: 300 !important;">Tired of missing out on perfect properties?</h2>
+            <p>Let's find your Denver dream home together.</p>
+            <a href="#contact" class="cta-button">Schedule Your Free Buyer Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Properties Section (Same as index) -->
+      <section id="properties" class="properties">
+        <div class="container">
+          <h2 style="font-weight: 300 !important;">Featured Properties</h2>
+          <p class="subtitle">Discover exceptional homes across Denver</p>
+          <div class="property-grid">
+            <div
+              class="property-card"
+              itemscope
+              itemtype="https://schema.org/Residence"
+            >
+              <div class="property-image">
+                <img
+                  src="https://placehold.co/800x600/121212/gold?text=Luxury+Property+1"
+                  alt="Modern Luxury Villa in Cherry Creek"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <div class="price" itemprop="price" content="1250000">
+                  $1,250,000
+                </div>
+              </div>
+              <div class="property-details">
+                <h3 itemprop="name">Modern Luxury Villa</h3>
+                <p
+                  class="location"
+                  itemprop="address"
+                  itemscope
+                  itemtype="https://schema.org/PostalAddress"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span itemprop="addressLocality">Cherry Creek</span>,
+                  <span itemprop="addressRegion">Denver</span>
+                </p>
+                <div class="features">
+                  <span
+                    ><i class="fas fa-bed"></i>
+                    <span itemprop="numberOfRooms">4</span> Beds</span
+                  >
+                  <span
+                    ><i class="fas fa-bath"></i>
+                    <span
+                      itemprop="amenityFeature"
+                      itemscope
+                      itemtype="https://schema.org/PropertyValue"
+                      ><meta itemprop="name" content="bathrooms" /><span
+                        itemprop="value"
+                        >3.5</span
+                      ></span
+                    >
+                    Baths</span
+                  >
+                  <span
+                    ><i class="fas fa-ruler-combined"></i>
+                    <span
+                      itemprop="floorSize"
+                      itemscope
+                      itemtype="https://schema.org/QuantitativeValue"
+                      ><span itemprop="value">3,200</span>
+                      <meta itemprop="unitText" content="SQFT" />Sq Ft</span
+                    ></span
+                  >
+                </div>
+                <a href="#" class="property-link">View Details</a>
+              </div>
+            </div>
+            <div
+              class="property-card"
+              itemscope
+              itemtype="https://schema.org/Residence"
+            >
+              <div class="property-image">
+                <img
+                  src="https://placehold.co/800x600/121212/gold?text=Luxury+Property+2"
+                  alt="Contemporary Townhouse in Highlands"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <div class="price" itemprop="price" content="875000">
+                  $875,000
+                </div>
+              </div>
+              <div class="property-details">
+                <h3 itemprop="name">Contemporary Townhouse</h3>
+                <p
+                  class="location"
+                  itemprop="address"
+                  itemscope
+                  itemtype="https://schema.org/PostalAddress"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span itemprop="addressLocality">Highlands</span>,
+                  <span itemprop="addressRegion">Denver</span>
+                </p>
+                <div class="features">
+                  <span
+                    ><i class="fas fa-bed"></i>
+                    <span itemprop="numberOfRooms">3</span> Beds</span
+                  >
+                  <span
+                    ><i class="fas fa-bath"></i>
+                    <span
+                      itemprop="amenityFeature"
+                      itemscope
+                      itemtype="https://schema.org/PropertyValue"
+                      ><meta itemprop="name" content="bathrooms" /><span
+                        itemprop="value"
+                        >2.5</span
+                      ></span
+                    >
+                    Baths</span
+                  >
+                  <span
+                    ><i class="fas fa-ruler-combined"></i>
+                    <span
+                      itemprop="floorSize"
+                      itemscope
+                      itemtype="https://schema.org/QuantitativeValue"
+                      ><span itemprop="value">2,100</span>
+                      <meta itemprop="unitText" content="SQFT" />Sq Ft</span
+                    ></span
+                  >
+                </div>
+                <a href="#" class="property-link">View Details</a>
+              </div>
+            </div>
+            <div
+              class="property-card"
+              itemscope
+              itemtype="https://schema.org/Residence"
+            >
+              <div class="property-image">
+                <img
+                  src="https://placehold.co/800x600/121212/gold?text=Luxury+Property+3"
+                  alt="Elegant Estate Home in Washington Park"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <div class="price" itemprop="price" content="1850000">
+                  $1,850,000
+                </div>
+              </div>
+              <div class="property-details">
+                <h3 itemprop="name">Elegant Estate Home</h3>
+                <p
+                  class="location"
+                  itemprop="address"
+                  itemscope
+                  itemtype="https://schema.org/PostalAddress"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span itemprop="addressLocality">Washington Park</span>,
+                  <span itemprop="addressRegion">Denver</span>
+                </p>
+                <div class="features">
+                  <span
+                    ><i class="fas fa-bed"></i>
+                    <span itemprop="numberOfRooms">5</span> Beds</span
+                  >
+                  <span
+                    ><i class="fas fa-bath"></i>
+                    <span
+                      itemprop="amenityFeature"
+                      itemscope
+                      itemtype="https://schema.org/PropertyValue"
+                      ><meta itemprop="name" content="bathrooms" /><span
+                        itemprop="value"
+                        >4.5</span
+                      ></span
+                    >
+                    Baths</span
+                  >
+                  <span
+                    ><i class="fas fa-ruler-combined"></i>
+                    <span
+                      itemprop="floorSize"
+                      itemscope
+                      itemtype="https://schema.org/QuantitativeValue"
+                      ><span itemprop="value">4,500</span>
+                      <meta itemprop="unitText" content="SQFT" />Sq Ft</span
+                    ></span
+                  >
+                </div>
+                <a href="#" class="property-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="view-all">
+            <a href="#" class="cta-button-secondary">View All Properties</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section (Same as index) -->
+      <section id="services" class="services">
+        <div class="container">
+          <h2 style="font-weight: 300 !important;">Services</h2>
+          <p class="subtitle">
+            Comprehensive real estate solutions tailored to your needs
+          </p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Buying</h3>
+              <p>
+                Find your Denver dream home with personalized property searches, neighborhood matching, and expert negotiations. I'll guide you to areas that match your lifestyle, not just your budget.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h3>Selling</h3>
+              <p>
+                Maximize your property's value with strategic pricing, professional staging, high-quality photography, and targeted marketing to connect with motivated buyers.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>First-Time Buyers</h3>
+              <p>
+                Navigate Denver's market with confidence through education-first approach, financing guidance, and personalized support for first-time homebuyers.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Investments</h3>
+              <p>
+                Build your real estate portfolio with data-driven analysis of Denver's growing markets, cash flow projections, and long-term growth strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section (Same as index) -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 style="font-weight: 300 !important;">Client Testimonials</h2>
+          <p class="subtitle">What my clients are saying</p>
+          <div class="testimonial-slider">
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Craig's expertise and dedication made our home buying
+                  experience seamless and enjoyable. His knowledge of the Denver
+                  market is unmatched, and he found us the perfect property in
+                  our dream neighborhood.
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h4>Michael & Sarah Johnson</h4>
+                <p>Cherry Creek, Denver</p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Working with Craig to sell our home was the best decision we
+                  made. His marketing strategy and negotiation skills resulted
+                  in multiple offers above asking price within just a few days
+                  of listing.
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h4>Jennifer Williams</h4>
+                <p>Highlands, Denver</p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  As first-time homebuyers, we had countless questions and
+                  concerns. Craig patiently guided us through every step, making
+                  what could have been an overwhelming process feel manageable
+                  and even exciting.
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h4>David & Emily Rodriguez</h4>
+                <p>Washington Park, Denver</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section (Same as index) -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-form">
+            <h2 style="font-weight: 300 !important;">Get in Touch</h2>
+            <p>
+              Ready to find your dream home or sell your property? Contact me
+              today for a personalized consultation.
+            </p>
+            <form aria-label="Contact form" role="form">
+              <div class="form-group">
+                <label for="name" class="visually-hidden">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="visually-hidden">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="visually-hidden">Your Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your Phone"
+                  aria-required="false"
+                />
+              </div>
+              <div class="form-group">
+                <label for="interest" class="visually-hidden">Interest</label>
+                <select
+                  id="interest"
+                  name="interest"
+                  aria-label="Select your interest"
+                >
+                  <option value="" disabled selected>
+                    I'm interested in...
+                  </option>
+                  <option value="buying" selected>Buying a Property</option>
+                  <option value="selling">Selling a Property</option>
+                  <option value="investment">Investment Opportunities</option>
+                  <option value="first-time">First-Time Buyer Guidance</option>
+                  <option value="consultation">General Consultation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="visually-hidden"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button type="submit" class="cta-button">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>(206) 713-9522</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>Craig@luxdenver.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>123 Cherry Creek Drive, Denver, CO 80209</p>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3 style="font-weight: 300 !important;">CRAIG DEBOLT</h3>
+            <p>LUX DENVER REALTOR</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#properties">Properties</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>
+              Subscribe to our newsletter for the latest property listings and
+              market updates.
+            </p>
+            <form>
+              <input type="email" placeholder="Your Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 LUX Denver. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
